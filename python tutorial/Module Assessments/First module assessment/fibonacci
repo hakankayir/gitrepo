@@ -1,0 +1,12 @@
+count = int(input("Enter the number of terms in the Fibonacci sequence: "))
+a = 0
+b = 1
+if count <= 0:
+    print("Please enter a positive number.")
+else:
+    print("Fibonacci sequence:")
+    for i in range(count):
+        print(a)  
+        temp = a + b       
+        a = b              
+        b = temp
